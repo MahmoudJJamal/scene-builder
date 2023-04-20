@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="665.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Scene2Controller">
+    <stylesheets>
+        <URL value="@scene2.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="31.0" layoutY="41.0" prefHeight="17.0" prefWidth="246.0" style="-fx-font-weight: bold; -fx-font-weight: italic;" text="Currency Converion System" textFill="#582eee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="logout" layoutX="442.0" layoutY="37.0" mnemonicParsing="false" onAction="#LogoutHandle" prefHeight="36.0" prefWidth="102.0" style="-fx-background-color: #e79049;" text="Log Out" textFill="WHITE" />
+      <Label layoutX="190.0" layoutY="196.0" prefHeight="36.0" prefWidth="45.0" style="-fx-font-weight: bold;" text="USD" textFill="#582eee">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textusd" layoutX="128.0" layoutY="240.0" />
+      <Label layoutX="323.0" layoutY="244.0" style="-fx-font-weight: bold;" text="TO" textFill="#582eee">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textnis" layoutX="390.0" layoutY="240.0" />
+      <Label layoutX="442.0" layoutY="196.0" prefHeight="36.0" prefWidth="45.0" style="-fx-font-weight: bold;" text="NIS" textFill="#582eee">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="convertsub" layoutX="272.0" layoutY="332.0" mnemonicParsing="false" onAction="#convertHundle" prefHeight="50.0" prefWidth="122.0" style="-fx-background-color: black; -fx-font-weight: bold; -fx-font-weight: italic;" text="Convert" textFill="WHITE" />
+   </children>
+</AnchorPane>

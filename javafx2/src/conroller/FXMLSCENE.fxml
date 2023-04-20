@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="labelError" prefHeight="668.0" prefWidth="445.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="conroller.SceneController">
+    <stylesheets>
+        <URL value="@scene.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="178.0" fitWidth="264.0" layoutX="134.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/man_1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="161.0" layoutY="334.0" prefHeight="17.0" prefWidth="123.0" style="-fx-font-weight: bold;" text="User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="106.0" layoutY="373.0" prefHeight="36.0" prefWidth="237.0" />
+      <Label alignment="CENTER" layoutX="147.0" layoutY="438.0" prefHeight="27.0" prefWidth="156.0" style="-fx-font-weight: bold;" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="password" layoutX="106.0" layoutY="481.0" prefHeight="42.0" prefWidth="237.0" />
+      <Button fx:id="submit" layoutX="179.0" layoutY="558.0" mnemonicParsing="false" onAction="#Submit_handle" prefHeight="42.0" prefWidth="88.0" style="-fx-background-color: blue;" text="Button" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="149.0" layoutY="29.0" prefHeight="27.0" prefWidth="147.0" style="-fx-font-weight: bold;" text="LableError" />
+   </children>
+</AnchorPane>
